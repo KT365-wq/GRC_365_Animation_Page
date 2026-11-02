@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animation Page</title>
+<style>
+	@font-face{
+		font-family: Spectral;
+		src:url("Spectral-Regular.ttf");
+	}@font-face{
+		font-family: NotoSerif;
+		src:url("NotoSerif_Condensed-Regular.ttf");
+	}#page {
+		width: 928px;
+		height: 1224px;
+		background: white;
+		margin: 0 auto;
+		boarder: 1px solid darkgrey;
+		box-shadow: 2px 3px 6px darkgrey;
+	} #banner{
+		width: 100%;
+	}h1{
+		text-align: center;
+		font: 25pt/1.4em NotoSerif;
+	}p{
+		font: 15pt/1.4em Spectral;
+		font-family: Spectral;
+		font-size: 14pt;
+		width: 85%;
+		margin: 0 auto;	
+	}button{
+		width:50px;
+		height: 50px;
+		border-radius: 50%;
+		background: lightyellow;
+		border: 1px solid orange;
+		display: block;
+	} #star {
+		width: 225px;
+		position: relative;
+		left: 0;
+		animation-name: letsgo;
+		animation-duration: 3s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+		animation-play-state: paused;
+	}#star2{
+		width: 225px;
+		position: relative;
+		left: 0;
+		animation-name: letsgo;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+		animation-play-state: paused;
+	}@keyframes letsgo{
+		0% {left: 5%;}
+		85% {left: 750px;}
+	</style>
+	</head>
+
+<body>
+	<div id="page">
+		<img id="banner" src="hello banner  offical.jpg">
+	<h1>Animation</h1>
+	<button onClick="document.getElementById('star').style.animationPlayState='running';">Go!</button>
+		<img id="star" src="SKYkid.png"> <br/>
+		
+		<br/>
+		<p> Animation, as it's defined, is the medium of moving images into a state of living images. There are several types of animation. Ranging from traditional hand drawn cell animation and its digital counter parts, to motion graphics, animation can be as complex or as simple as needed to fulfill its purpose. Complex animation like cartoons can tell a story and entertain the viewer, while simplistic animations can be used to enhance the viewer's experience or catch their attention.</p>
+		<br/>
+	<p>This animation is simplistic in nature, however, it goes over a major component in all animation. That being the ease in which the animation takes place. Ease, in short terms, is the speed of movement in an animation over time. Duration is how long the animation takes place. In this new animation, the ease is different and even with the same image, the energy for each feels different as the duration of the animations differ from one another.</p> 
+		<br/>
+	<button onClick="document.getElementById('star2').style.animationPlayState='running';">Go!</button>
+	<img id="star2" src="SKYkid.png">
+	</div>
+	
+</body>
+</html>
